@@ -7,7 +7,7 @@
 ##############################################################
 
 #DONE: Fill up the contents below in order to reference your assignment 3 git contents
-LDD_VERSION = 9bae7ebeb5945a0626fdcc1e5e62502eb94e5306
+LDD_VERSION = 919890fb9db2f7c8e376c27fc796b5995e15d3a7
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
@@ -25,8 +25,6 @@ define LDD_INSTALL_TARGET_MODULES
 	$(INSTALL) -m 0755 $(@D)/scull/scull_unload         $(TARGET_DIR)/usr/bin/
 	$(INSTALL) -m 0755 $(@D)/misc-modules/module_load   $(TARGET_DIR)/usr/bin/
 	$(INSTALL) -m 0755 $(@D)/misc-modules/module_unload $(TARGET_DIR)/usr/bin/
-
-	$(INSTALL) -m 0755 $(@D)/S98lddmodules              $(TARGET_DIR)/etc/init.d/S98lddmodules
 endef
 
 LDD_POST_BUILD_HOOKS += LDD_INSTALL_TARGET_MODULES
