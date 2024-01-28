@@ -1,0 +1,6 @@
+
+config BR2_PACKAGE_AESD_CHAR
+	bool "aesd-char"
+	help
+	  Includes the aesd_char linux kernel module in the kernel image.
+	  Used to understand buildroot external trees and package builds.
